@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JkTym</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="./assets/icon.png" />
+
+    <style>
+      @keyframes blurIn {
+        0% {
+          filter: blur(10px);
+          opacity: 0;
+        }
+        100% {
+          filter: blur(0);
+          opacity: 1;
+        }
+      }
+
+      .animate {
+        animation: blurIn 3s ease-out;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="container d-flex justify-content-center align-items-center vh-100"
+    >
+      <div class="card text-center shadow-lg p-3 mb-5 bg-body rounded">
+        <div class="card-header bg-primary text-white">
+          Created by Meinardz🫡
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Joke of the day</h5>
+          <p class="card-text lead"><%=setup%></p>
+          <p class="card-text animate lead"><%=delivery%></p>
+          <a href="/joke" class="btn btn-primary btn-sm mt-3"
+            >Get random joke</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
